@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 public class CommentsInfo {
 
-    private int commentsCounter;
+    private int count;
     private int id;
     private int ownerId;
     private String userName;
@@ -13,13 +13,17 @@ public class CommentsInfo {
     private String audioUrl;
     private String fileUrl;
     private boolean canPost;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
 
-    public int getCommentsCounter() {
-        return commentsCounter;
+
+    public int getCount() {
+        return count;
     }
 
-    public void setCommentsCounter(int commentsCounter) {
-        this.commentsCounter = commentsCounter;
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public int getId() {
@@ -100,5 +104,29 @@ public class CommentsInfo {
 
     public void setCanPost(boolean canPost) {
         this.canPost = canPost;
+    }
+
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
